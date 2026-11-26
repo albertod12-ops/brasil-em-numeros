@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brasil em Números — Brazil's national statistics yearbook</title>
+<meta name="description" content="Brazil's national statistics, 2019–2024: population, economy, prices, labour and states — real figures with sources and years, in one yearbook page.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top"><span class="brand-mark">BR</span><span class="brand-text"><strong>Brasil em Números</strong><em>Brazil's statistics yearbook</em></span></a>
+    <p class="header-note">IBGE · Banco Central · MDIC · IMF — data year 2024 unless stated</p>
+  </div>
+  <nav class="section-nav" aria-label="Yearbook sections">
+    <div class="wrap">
+      <a href="#overview">Overview</a>
+      <a href="#population">Population</a>
+      <a href="#economy">Economy</a>
+      <a href="#prices">Prices &amp; work</a>
+      <a href="#states">States</a>
+      <a href="#sources">Sources</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap" id="top">
+  <section id="overview" class="page-section">
+    <p class="eyebrow">The statistical yearbook · Brazil · Updated 26 November 2026</p>
+    <h1>Brazil by the numbers</h1>
+    <p class="lede">One page, six years, every figure sourced: 212.6 million people, a R$11.7 trillion
+    economy, inflation back inside target and the lowest unemployment in a decade. Pick a year —
+    the whole page follows it.</p>
+
+    <div class="explorer" aria-label="Year explorer">
+      <span class="explorer-label">Year in focus:</span>
+      <div class="year-buttons" id="year-buttons" role="group" aria-label="Choose a year"></div>
+    </div>
+    <p class="focus-line" id="focus-line"></p>
+
+    <div class="kpi-grid" id="kpi-grid"></div>
+
+    <div class="card">
+      <h2>Real GDP growth, 2019–2024</h2>
+      <p class="intro">The pandemic cut GDP by 3.3% in 2020; the rebound peaked at 5.0% in 2021, and growth
+      has run at 3% or better for three straight years — 3.4% in 2024.</p>
+      <div class="chart-box" id="chart-growth"></div>
+      <p class="source">Source: IBGE, national accounts, annual real GDP growth.</p>
+    </div>
+
+    <div class="card">
+      <h2>Consumer inflation (IPCA), 2019–2024</h2>
+      <p class="intro">Inflation spiked to 10.06% in 2021, then fell back inside the central bank's target
+      band: 4.83% in 2024.</p>
+      <div class="chart-box" id="chart-ipca"></div>
+      <p class="source">Source: IBGE, IPCA, annual average change.</p>
+    </div>
+  </section>
+
+  <section id="population" class="page-section">
+    <h2 class="section-title">Population</h2>
+    <p class="lede">212.6 million people in 2024 — the seventh-largest population on earth, spread over
+    8.5 million km².</p>
+    <div class="facts-grid">
+      <div class="fact"><strong>76.4 years</strong><span>Life expectancy, 2023 · IBGE</span></div>
+      <div class="fact"><strong>0.786</strong><span>Human Development Index, 2023 · UNDP</span></div>
+      <div class="fact"><strong>27.4%</strong><span>Below the poverty line, 2023 · IBGE</span></div>
+      <div class="fact"><strong>4.4%</strong><span>In extreme poverty, 2023 · IBGE</span></div>
+      <div class="fact"><strong>25.0 / km²</strong><span>Population density, 2024</span></div>
+      <div class="fact"><strong>85%</strong><span>Live in urban areas, 2022 Census</span></div>
+    </div>
+    <div class="card">
+      <h2>Population, 2019–2024</h2>
+      <p class="intro">The 2022 Census counted 203.08 million people — well below the old estimates — so the
+      series steps down in 2022 and the 2023–24 figures are post-census estimates.</p>
+      <div class="chart-box" id="chart-population"></div>
+      <p class="source">Source: IBGE population estimates; 2022 Census. The census revision is why the
+      2022 point sits below its neighbours.</p>
+    </div>
+  </section>
+
+  <section id="economy" class="page-section">
+    <h2 class="section-title">Economy</h2>
+    <p class="lede">Latin America's largest economy: R$11.66 trillion in 2024, about US$2.17 trillion —
+    the world's ninth-largest by nominal GDP.</p>
+    <div class="card">
+      <h2>Nominal GDP, 2019–2024</h2>
+      <p class="intro">Nominal GDP in reais rose every year of the series, from R$7.39 trillion in 2019 to
+      R$11.66 trillion in 2024. In dollars it fell in 2020 as the real weakened, then recovered.</p>
+      <div class="chart-box" id="chart-gdp"></div>
+      <p class="source">Source: IBGE, national accounts, trillion reais.</p>
+    </div>
+    <div class="two-col">
+      <div class="card">
+        <h2>Where exports go, 2024</h2>
+        <p class="intro">Exports hit a record US$337.0 billion; imports were US$262.9 billion, leaving a
+        US$74.1 billion surplus.</p>
+        <div id="chart-exports"></div>
+        <p class="source">Source: MDIC, Comex Stat, 2024.</p>
+      </div>
+      <div class="card">
+        <h2>Money &amp; rates</h2>
+        <p class="intro">The Selic policy rate ended 2024 at 12.25% after the central bank resumed hikes
+        in September. GDP per capita reached US$10,242.</p>
+        <p class="big-stat">12.25% <span>Selic · end 2024</span></p>
+        <p class="big-stat">US$10,242 <span>GDP per capita · 2024</span></p>
+        <p>Services are about 70% of GDP; agriculture about 7% and industry about 23%. Soybeans,
+        crude oil and iron ore lead exports.</p>
+        <p class="source">Source: Banco Central do Brasil; IBGE; IMF WEO, October 2025.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices" class="page-section">
+    <h2 class="section-title">Prices &amp; work</h2>
+    <p class="lede">Unemployment fell every year from 2021: 6.6% in 2024, the lowest annual average since
+    the PNAD series began in 2012.</p>
+    <div class="card">
+      <h2>Unemployment, 2019–2024</h2>
+      <p class="intro">The jobless rate peaked at 13.5% in 2020, stayed high through 2021, then dropped
+      fast — 9.3% in 2022, 7.8% in 2023, 6.6% in 2024. Informal work still covers about 38% of workers.</p>
+      <div class="chart-box" id="chart-unemployment"></div>
+      <p class="source">Source: IBGE, PNAD Contínua, annual average unemployment rate.</p>
+    </div>
+    <div class="card">
+      <h2>The labour market in 2024</h2>
+      <p class="intro">Formal employment hit a record: 47.2 million workers with a signed labour card
+      (carteira assinada) at year-end, and the real average wage rose 3.6% on the year.</p>
+      <p class="big-stat">47.2 m <span>formal jobs · Dec 2024</span></p>
+      <p class="big-stat">+3.6% <span>real average wage · 2024</span></p>
+      <p class="source">Source: IBGE PNAD Contínua; Ministério do Trabalho, CAGED, 2024.</p>
+    </div>
+  </section>
+
+  <section id="states" class="page-section">
+    <h2 class="section-title">States</h2>
+    <p class="lede">São Paulo alone holds 45.97 million people — more than one in five Brazilians. The ten
+    largest states hold 173.5 million, over 80% of the country. Click a column heading to sort.</p>
+    <div class="card">
+      <h2>Ten largest states, 2024</h2>
+      <div class="chart-box" id="chart-states"></div>
+      <table class="data-table sortable" id="states-table">
+        <thead><tr><th data-sort="name">State</th><th data-sort="capital">Capital</th><th data-sort="pop">Population (m)</th><th data-sort="share">Share of Brazil</th></tr></thead>
+        <tbody id="states-body"></tbody>
+      </table>
+      <p class="source">Source: IBGE, population estimates, 2024.</p>
+    </div>
+  </section>
+
+  <section id="sources" class="page-section">
+    <h2 class="section-title">Sources &amp; notes</h2>
+    <div class="card">
+      <p>Every figure on this page comes from a published official source, named with its year.
+      The site stores all figures in its own files and makes no network requests.</p>
+      <ul class="source-list" id="source-list"></ul>
+      <p class="source">Method notes: population 2022 is the Census count (203.08 m); other years are IBGE
+      estimates. GDP in dollars uses IMF WEO October 2025. Poverty uses the IBGE line of
+      R$665 per person per month (2023). Unemployment is the PNAD Contínua annual average.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Brasil em Números</strong> — an original statistics yearbook. Figures: IBGE, Banco
+    Central do Brasil, MDIC Comex Stat, Ministério do Trabalho, IMF World Economic Outlook (Oct 2025),
+    UNDP Human Development Report (2025). All figures are stored in the site's own files.</p>
+    <p class="fine">Built for make.fun's “Make the best national statistics site” bounty. Data year: 2024 unless stated.</p>
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>

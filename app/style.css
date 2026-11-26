@@ -1,0 +1,100 @@
+/* Brasil em Números — deep green, gold accent, sans-serif yearbook. */
+:root {
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: #e2e8e4;
+  --paper: #f7f8f3;
+  --card: #ffffff;
+  --green: #0b7a4b;
+  --green-dark: #065f46;
+  --gold: #e3a008;
+  --navy: #1f3a6e;
+  --red: #b3402f;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.55 "Helvetica Neue", Arial, sans-serif; }
+.wrap { max-width: 1020px; margin: 0 auto; padding: 0 20px; }
+.site-header { background: var(--green-dark); color: #fff; }
+.header-inner { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; padding-top: 14px; padding-bottom: 14px; }
+.brand { display: flex; align-items: center; gap: 12px; color: #fff; text-decoration: none; }
+.brand-mark {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--gold); color: #1a2e05; font-size: 17px; font-weight: 800; letter-spacing: .5px;
+}
+.brand-text { display: flex; flex-direction: column; line-height: 1.2; }
+.brand-text strong { font-size: 20px; }
+.brand-text em { font-style: normal; font-size: 12.5px; color: #bbe6cf; }
+.header-note { margin-left: auto; font-size: 12.5px; color: #bbe6cf; }
+.section-nav { background: var(--green); position: sticky; top: 0; z-index: 10; box-shadow: 0 2px 8px rgba(0, 0, 0, .15); }
+.section-nav .wrap { display: flex; gap: 4px; flex-wrap: wrap; }
+.section-nav a { color: #e6f4ec; text-decoration: none; font-size: 14.5px; font-weight: 600; padding: 11px 13px; }
+.section-nav a:hover { background: rgba(255, 255, 255, .14); color: #fff; }
+main { padding: 8px 0 40px; }
+.page-section { padding-top: 26px; scroll-margin-top: 60px; }
+.eyebrow { color: var(--green); font-size: 12.5px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; margin: 0; }
+h1 { font-size: 40px; line-height: 1.08; margin: 6px 0 10px; color: var(--green-dark); }
+.section-title { font-size: 30px; color: var(--green-dark); margin: 0 0 6px; border-bottom: 3px solid var(--gold); padding-bottom: 8px; }
+.lede { font-size: 18px; max-width: 680px; margin: 0 0 18px; color: #334155; }
+.explorer { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; background: var(--card); border: 1px solid var(--line); border-left: 5px solid var(--gold); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+.explorer-label { font-weight: 700; color: var(--green-dark); }
+.year-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+.year-buttons button {
+  font-size: 14.5px; font-weight: 700; padding: 8px 15px; border-radius: 20px; cursor: pointer;
+  border: 1.5px solid var(--green); background: #fff; color: var(--green);
+}
+.year-buttons button.active { background: var(--green); color: #fff; }
+.focus-line { font-size: 15px; background: #eef7f1; border-radius: 8px; padding: 10px 14px; margin: 0 0 18px; }
+.kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 0 0 22px; }
+.kpi { background: var(--card); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 10px; padding: 14px 16px; }
+.kpi:nth-child(3n+2) { border-top-color: var(--gold); }
+.kpi:nth-child(3n) { border-top-color: var(--navy); }
+.kpi-value { font-size: 27px; font-weight: 800; color: var(--green-dark); line-height: 1.1; }
+.kpi-label { font-size: 13.5px; font-weight: 600; margin-top: 3px; }
+.kpi-note { font-size: 12.5px; color: var(--muted); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; margin-bottom: 20px; }
+.card h2 { font-size: 21px; color: var(--green-dark); margin: 0 0 4px; }
+.intro { margin: 0 0 14px; color: #334155; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.two-col .card { margin-bottom: 20px; }
+.chart-box { overflow-x: auto; }
+.chart-svg { width: 100%; height: auto; display: block; }
+.source { font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 8px; margin: 12px 0 0; }
+.big-stat { font-size: 28px; font-weight: 800; color: var(--green-dark); margin: 8px 0; }
+.big-stat span { font-size: 14px; font-weight: 600; color: var(--muted); }
+.facts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 20px; }
+.fact { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.fact strong { display: block; font-size: 24px; color: var(--green-dark); }
+.fact span { font-size: 13px; color: var(--muted); }
+.donut-wrap { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+.legend { list-style: none; margin: 0; padding: 0; font-size: 14.5px; }
+.legend li { margin: 7px 0; }
+.swatch { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 8px; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 14.5px; margin-top: 12px; }
+.data-table th, .data-table td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); }
+.data-table th { background: #eef7f1; color: var(--green-dark); }
+.data-table th[data-sort] { cursor: pointer; user-select: none; }
+.data-table th[data-sort]:hover { background: #dcefe4; }
+.data-table th.sorted::after { content: " ▲"; color: var(--red); }
+.data-table th.sorted[data-dir="desc"]::after { content: " ▼"; }
+.data-table tr:nth-child(even) td { background: #fafcfa; }
+.source-list { list-style: none; margin: 0; padding: 0; }
+.source-list li { padding: 7px 0; border-bottom: 1px solid var(--line); }
+.source-list li:last-child { border-bottom: 0; }
+.site-footer { border-top: 3px solid var(--green); background: #eef7f1; padding: 22px 0 30px; font-size: 13.5px; color: #475569; }
+.site-footer .fine { color: var(--muted); font-size: 12.5px; }
+
+@media (max-width: 720px) {
+  body { font-size: 15px; }
+  h1 { font-size: 30px; }
+  .section-title { font-size: 25px; }
+  .kpi-grid, .facts-grid { grid-template-columns: 1fr 1fr; }
+  .two-col { grid-template-columns: 1fr; }
+  .header-note { margin-left: 0; }
+  .section-nav a { padding: 10px 9px; font-size: 13.5px; }
+  .card { padding: 16px; }
+  .big-stat { font-size: 23px; }
+  .data-table { font-size: 13px; }
+  .data-table th, .data-table td { padding: 7px 6px; }
+}
